@@ -1,0 +1,9 @@
+T = input(' Time for one oscillation');
+l = input('length of pendulum');
+g = 9.81;
+fnthe = (1/(2*pi))*sqrt(g/l);
+fnexp = (1/T);
+error = (((fnthe - fnexp)/fnthe)*100);
+fprintf('fnthe = %f\n',fnthe);
+fprintf('fnexp = %f\n',fnexp);
+fprintf('error = %f\n',error);
