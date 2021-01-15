@@ -1,0 +1,14 @@
+T = input(' Time for one oscillation');
+lt = input('length of pendulum');
+rd = input('radius of disc');
+ds = input('diameter of shaft');
+m = input('mass of disc');
+G = input('modulus of rigidity');
+I = (0.5*m*rd*rd);
+J = ((pi*ds^4)/32)
+fnthe = (1/(2*pi)*sqrt((G*J)/(lt*I)))
+fnexp = (1/T);
+error = ((fnthe - fnexp)/fnthe)*100;
+fprintf('fnthe = %f\n',fnthe);
+fprintf('fnexp = %f\n',fnexp);
+fprintf('error = %f\n',error);
