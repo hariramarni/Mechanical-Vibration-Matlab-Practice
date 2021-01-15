@@ -1,0 +1,10 @@
+T = input(' Time for one oscillation');
+H = input('height of pendulum');
+g = 9.81;
+KG = sqrt(((T^2*g*H)/(4*pi^2))-H^2);
+fnthe = (1/(2*pi))*sqrt(((g*H)/(KG^2+H^2)));
+fnexp = (1/T);
+error = (((fnthe - fnexp)/fnthe)*100);
+fprintf('fnthe = %f\n',fnthe);
+fprintf('fnexp = %f\n',fnexp);
+fprintf('error = %f\n',error);
