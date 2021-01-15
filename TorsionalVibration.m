@@ -1,5 +1,5 @@
 T = input(' Time for one oscillation');
-lt = input('length of pendulum');
+lt = input('length of torsional pendulum');
 rd = input('radius of disc');
 ds = input('diameter of shaft');
 m = input('mass of disc');
