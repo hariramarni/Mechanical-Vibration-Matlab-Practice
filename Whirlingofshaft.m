@@ -1,0 +1,15 @@
+ds= input('dia of shaft');
+ls = input('length of shaft');
+Acs = input('Actual critical speed');
+den = input('density of shaft material');
+E = input('modulus elasticity of material');
+I = ((pi*ds^4)/64);
+g= 9.81;
+a= ((pi*ds^2)/4);
+w = den*a*ls*g
+dis = ((5*w*ls^4)/(384*E*I))
+Nc = ((60/(2*pi))*sqrt(g/dis));
+error = ((Nc - Acs)/Nc)*100;
+fprintf('Nc = %f\n',Nc);
+fprintf('Acs = %f\n',Acs);
+fprintf('error = %f\n',error);
